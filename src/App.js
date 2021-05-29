@@ -3,17 +3,16 @@ import {createMuiTheme, ThemeProvider} from '@material-ui/core'
 import Homepage from './pages/Homepage'
 
 const theme = createMuiTheme({
-  palette:{
-    primary: {
-      main: '#FFD546'
+    source:{
+      typography: {
+      }
     }
-  }
 })
 function App() {
   return (
-    <div className="App">
+    <ThemeProvider theme={theme}>
       <Homepage/>
-    </div>
+    </ThemeProvider>
   );
 }
 
