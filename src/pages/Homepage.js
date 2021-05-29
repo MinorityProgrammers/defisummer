@@ -5,6 +5,8 @@ import {ReactComponent as LargeBanner } from '../assets/images/Large Banner.svg'
 import {ReactComponent as BottomBanner} from '../assets/images/Vector 1.svg'
 import Banner from '../components/Banner/Banner'
 import About from '../components/About/About'
+import PrizeTracks from '../components/Prize/PrizeTracks'
+import HowToHelp from '../components/Help/HowToHelp'
 
 const useStyles = makeStyles((theme) => ({
     bottomB:{
@@ -39,6 +41,8 @@ export default function Homepage () {
             </div>
             <Banner/>
             <About/>
+            <PrizeTracks/>
+            <HowToHelp/>
         </div>
     )
 }
