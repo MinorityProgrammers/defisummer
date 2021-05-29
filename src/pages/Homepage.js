@@ -7,6 +7,10 @@ import Banner from '../components/Banner/Banner'
 import About from '../components/About/About'
 import PrizeTracks from '../components/Prize/PrizeTracks'
 import HowToHelp from '../components/Help/HowToHelp'
+import Faq from '../components/Faq/Faq'
+import JudgesList from '../components/Judges/JudgesList'
+import SponsorsList from '../components/Sponsors/SponsorsList'
+import Footer from '../components/Footer/Footer'
 
 const useStyles = makeStyles((theme) => ({
     bottomB:{
@@ -43,6 +47,10 @@ export default function Homepage () {
             <About/>
             <PrizeTracks/>
             <HowToHelp/>
+            <Faq/>
+            <JudgesList/>
+            <SponsorsList/>
+            <Footer/>
         </div>
     )
 }
