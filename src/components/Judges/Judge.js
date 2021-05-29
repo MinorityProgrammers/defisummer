@@ -6,7 +6,8 @@ const useStyles = makeStyles (() => ({
     container:{
         display: 'flex',
         width: '400px',
-        margin: '20px ','&:hover': {
+        margin: '20px ',
+        '&:hover': {
             cursor: 'pointer'
           }
     },

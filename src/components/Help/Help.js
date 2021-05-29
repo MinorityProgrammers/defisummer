@@ -6,6 +6,9 @@ import {data} from '../../Data/DummyData'
 
 const useStyles = makeStyles (() => ({
     container:{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
         '&:hover': {
             cursor: 'pointer'
           }
@@ -16,9 +19,9 @@ export default function Help ({helpInfo}) {
     let classes = useStyles();
     return(
         <div className={classes.container}>
-            <img src={helpInfo.image} alt='Prize' style={{width: 100, height: 100, margin: '20px '}}/>
+            <img src={helpInfo.image} alt='Prize' style={{width: 100, height: 100, margin: '20px'}}/>
             <div>
-            <Typography variant='body1' style={{fontWeight: 700, marginBottom: 5}}>
+            <Typography variant='body1' style={{fontWeight: 700, marginBottom: 5, }}>
                 {helpInfo.title}
             </Typography>
             </div>

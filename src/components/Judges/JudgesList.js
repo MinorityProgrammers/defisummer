@@ -24,7 +24,7 @@ export default function JudgesList () {
     const judges = data.judges.map(judge => <Judge key={judge.id} judge={judge}/>)
     return(
         <div className={classes.container}>
-            <Typography variant='h5'>
+            <Typography variant='h5' style={{fontFamily: 'Open Sans', fontWeight: 700}}>
                 {'<JUDGES/>'}
             </Typography>
 
