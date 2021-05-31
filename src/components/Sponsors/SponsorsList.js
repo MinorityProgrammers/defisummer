@@ -14,7 +14,7 @@ const useStyles = makeStyles (() => ({
         alignItems: 'center',
         justifyContent: 'space-around',
         flexWrap: 'wrap',
-        width: '110vh',
+        width: '70%',
         margin: '5vh auto'
     }
 }))

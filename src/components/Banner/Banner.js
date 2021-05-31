@@ -25,10 +25,10 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 700
     },
     buttons:{
-        width: '80%',
         margin: 'auto',
         display: 'flex',
-        justifyContent: 'space-around'
+        justifyContent: 'center',
+        flexWrap: 'wrap'
     }
 }))
 export default function Banner () {

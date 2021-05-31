@@ -1,17 +1,17 @@
 import React from 'react'
 import {makeStyles} from '@material-ui/core/styles'
-import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles (() => ({
     sponsor: {
-        // width: '100px',
-        margin: '2vh 2vh ',
+        width: '20vh',
+        margin: '2vh 4vh ',
         '&:hover': {
             cursor: 'pointer'
           },
     },
     sponsorImage:{
-        height: '8h'
+        height: 'auto',
+        width: '100%'
     }
 }))
 
