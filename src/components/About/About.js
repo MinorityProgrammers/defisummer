@@ -1,14 +1,13 @@
 import React from 'react'
 import {makeStyles} from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core';
+import { Parallax } from 'react-parallax';
 
 import BgImg from '../../assets/images/about.svg'
 
 const useStyles = makeStyles (() => ({
     container: {
-        backgroundImage: `url(${BgImg})`,
-        backgroundColor: '#1FB1FD',
-        padding: '10vh',
+        padding: '15vh 4vh',
         color:'#fff'
     },
     innerCont:{
@@ -28,6 +27,7 @@ const useStyles = makeStyles (() => ({
 export default function About () {
     let classes = useStyles();
     return (
+        <Parallax blur={1} bgImage={BgImg} bgImageAlt="the cat" strength={1000} style={{backgroundColor: '#1FB1FD'}}>
         <div className={classes.container}>
             <div className={classes.innerCont}>
                 <Typography component='h2' variant='h5' style={{fontWeight: 700}}>
@@ -38,13 +38,14 @@ export default function About () {
                         <span className={classes.hashTag}>#DefiSummer</span> is a summer long celebration, summit, and hackathon for decentralized finance. Starting June 1st, developers from all around the world can team up with each other and get direct access to industry professionals to solve the biggest issues surrounding the #decentralized finance space. Global banking solutions. Blockchain consultancy. NFT marketplaces. Smart contract development.
                     </Typography>
 
-                    <Typography component='p' variant='body2' className={classes.description}>
+                    <Typography component='p' variant='body2' >
                         Trading automation. Blockchain governance. Find a team, learn how to do it, build a project, win prizes &amp; internships, and celebrate all summer. Organized by the Minority Programmers Association looking to bring more diverse talent into STEM &amp;<span className={classes.hashTag}>#blockchain</span>.
                     </Typography>
                 </div>
             </div>
         </div>
+        </Parallax>
     )
 }
 
-
+   
