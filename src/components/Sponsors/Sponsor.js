@@ -5,8 +5,11 @@ const useStyles = makeStyles (() => ({
     sponsor: {
         width: '20vh',
         margin: '2vh 4vh ',
+        opacity:0.5,
         '&:hover': {
-            cursor: 'pointer'
+            cursor: 'pointer',
+            opacity: 1,
+            transition: '500ms linear'
           },
     },
     sponsorImage:{

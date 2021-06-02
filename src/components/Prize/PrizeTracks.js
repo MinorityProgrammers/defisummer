@@ -7,13 +7,14 @@ import {data} from '../../Data/DummyData'
 
 const useStyles = makeStyles (() => ({
     container:{
-        margin: '10vh 15vh'
+        margin: '10vh 8%',
     },
     prize:{
         display: 'flex',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         flexWrap: 'wrap',
-        margin: '10vh 0'
+        flexGrow: 1,
+        margin: '10vh 0',
     }
 }))
 
@@ -22,6 +23,7 @@ export default function PrizeTracks () {
     const prizes = data.prize.map(p => <Prize key={p.id} prizes={p}/>)
 
     return(
+        <div className=''>
         <div className={classes.container}>
             <div>
             <Typography variant='h5' style={{fontWeight: 700}}>
@@ -34,6 +36,7 @@ export default function PrizeTracks () {
             <div className={classes.prize}>
                 {prizes}
             </div>
+        </div>
         </div>
     )
 }

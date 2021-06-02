@@ -18,6 +18,31 @@ import Blockchain from '../assets/images/image 67.svg'
 import Twitter from '../assets/icons/Rectangle 272.svg'
 import Second from '../assets/icons/Rectangle 271.svg'
 
+//Events
+const learn = [
+    {id: '1', month: 'June', date: '1st', time: '9:00 AM EST', event: 'Kick off Ceremony'},
+    {id: '2', month: 'June', date: '1st', time: '9:00 AM EST', event: 'Challenges Announced'},
+    {id: '3', month: 'June', date: '1st', time: '9:00 AM EST', event: 'TBA'},
+    {id: '4', month: 'June', date: '1st', time: '9:00 AM EST', event: 'TBA'},
+    {id: '5', month: 'June', date: '2st', time: '9:00 AM EST', event: 'TBA'},
+]
+
+const hack = [
+    {id:'1', month: 'July', date:'1st' ,time:'TBA', event:'Team Formation, Ideation, Market Research'},
+    {id:'2', month: 'July', date:'2nd' ,time:'TBA', event:'Topic Specific Workshops'},
+    {id:'3', month: 'July', date:'3rd' ,time:'TBA', event:'TBA'},
+    {id:'4', month: 'July', date:'4th' ,time:'TBA', event:'Topic Specific Workshops'},
+    {id:'5', month: 'July', date:'5th' ,time:'TBA', event:'Topic Specific Workshops'},
+]
+
+const build = [
+    {id: '1', month: 'August', date: '16th', time: 'TBA', event: 'Judging Begins'},
+    {id: '2', month: 'August', date: '17th', time: 'TBA', event: 'TBA'},
+    {id: '3', month: 'August', date: '18th', time: 'TBA', event: 'TBA'},
+    {id: '4', month: 'August', date: '19th', time: 'TBA', event: 'TBA'},
+    {id: '5', month: 'August', date: '20th', time: 'TBA', event: 'TBA'},
+]
+
 export const data = {
     prize: [
         {id: '1', title: 'Learning Incentivization', description: 'Learning Incentivization: Develop an e-learning application that rewards individuals crypto for learning STEM concepts. The winners of this will be given a chance at Blockchain Engineering internships with MPA.'},
@@ -66,5 +91,15 @@ export const data = {
     socials:[
         {id: '1', image: Second},
         {id: '2', image: Twitter},
+    ],
+    tableData: [
+        {id: '1', row1Title: 'Quality of Features', row1Desc: 'Are your features meaningful and add to the overall quality of the product?', row2Title: 'Accesibility', row2Desc:'Will your solution work in places with no access to financial systems? Mobile', row3Title:'UX Design', row3Desc:'Does your UX Design consider a wide variety of applications?'},
+        {id: '2', row1Title: 'Comprehensive Project', row1Desc: 'Does your solution have comprehensive feature or does it look like you just put something together?',row1Desc2: 'Did you tackle multiple proniems at once concering decentralized finance?',row2Title:'Effectiveness' ,row2Desc:'Does it actually solve a problem converning decentralized finance?',row3Title:'Code Cleanliness',row3Desc:'is your code easy to understand?'},
+        {id: '3', row1Title: 'Efficiency', row1Desc: 'is your code efficient? Do you use an efficient algorithm? Do your plugins and APIs run smoothly',row2Title:'Portability and Usability',row2Desc:'is your code easy to run and works on multiple systems?',row3Title:'Originality of Work',row3Desc:'is your idea novel? Do you not plagiarize and property credit others for their contribution?'}
+    ],
+    events: [
+        {id: '1', name: 'Learn', events: learn},
+        {id: '2', name: 'Hack', events: hack},
+        {id: '3', name: 'Build', events: build},
     ]
 }

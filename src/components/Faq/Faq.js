@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {makeStyles, Typography } from '@material-ui/core'
+import { Parallax } from 'react-parallax';
 
 import Question from './Question'
 import FaqImg from '../../assets/images/faq.svg'
@@ -7,8 +8,6 @@ import {data} from '../../Data/DummyData'
 
 const useStyles = makeStyles(() => ({
     container:{
-        backgroundImage: `url(${FaqImg})`,
-        backgroundColor: '#F9B444',
         padding: '10vh 0',
         display: 'flex',
         flexDirection: 'column',
@@ -19,9 +18,19 @@ const useStyles = makeStyles(() => ({
 
 export default function Faq (){
     let classes = useStyles();
+    const [show, setShow] = useState(null);
+
+    const open = index => {
+        if(show === index){
+            return setShow(null);
+        }else{
+            setShow(index)
+        }
+    }
+    const faq = data.faq.map((qstn, index) => <Question key={qstn.id} qstns={qstn} show={show} onPress={() => open(qstn.id)}/>)
     
-    const faq = data.faq.map(qstn => <Question key={qstn.id} qstns={qstn}/>)
     return(
+        <Parallax blur={1} bgImage={FaqImg} bgImageAlt="the cat" strength={1000} style={{backgroundColor: '#F9B444'}}>
         <div className={classes.container}>
             <Typography variant ='h5'>
                 {'<FREQUENTLY_ASKED_QUESTIONS/>'}
@@ -33,5 +42,6 @@ export default function Faq (){
                 {faq}
             </div>
         </div>
+        </Parallax>
     )
 }

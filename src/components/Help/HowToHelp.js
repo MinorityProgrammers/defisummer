@@ -7,7 +7,7 @@ import Help from './Help'
 
 const useStyles = makeStyles (() => ({
     container:{
-        margin: '10vh 15vh'
+        margin: '10vh 8%'
     },
     help:{
         display: 'flex',

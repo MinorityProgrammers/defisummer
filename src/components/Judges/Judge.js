@@ -8,7 +8,8 @@ const useStyles = makeStyles (() => ({
         width: '400px',
         margin: '20px ',
         '&:hover': {
-            cursor: 'pointer'
+            cursor: 'pointer',
+           
           }
     },
     avatar:{

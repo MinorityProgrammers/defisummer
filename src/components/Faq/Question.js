@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import {makeStyles, Typography } from '@material-ui/core'
 
 const useStyles = makeStyles(() => ({
@@ -10,40 +10,39 @@ const useStyles = makeStyles(() => ({
             cursor: 'pointer',
             border: '1px solid #ccc'
           },
-          margin: '20px 0'
+          margin: '20px 0',
+          transition: '500ms linear'
     },
     innerContainer:{
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-    }
+    },
 }))
 
-export default function Question ({qstns}){
+export default function Question ({qstns,onPress, show}){
     let classes = useStyles();
-    const [show, setShow] = useState(false);
     
-    const open = () => {
-        setShow(!show);
-    }
     return(
-        <div className={classes.container}>
-            <div className={classes.innerContainer} onClick={open}>
+        <div className={classes.container} onClick={onPress}>
+            <div className={classes.innerContainer} >
                 <Typography variant ='body1' style={{textAlign: 'center', fontWeight: 700}}>
-                    What is DeFi?
+                    {qstns.title}
                 </Typography>
 
                 {
-                    !show ? <i class="fas fa-plus" style={{color: '#1FB1FD'}}/> :
-                    <i class="fas fa-minus" style={{color: '#1FB1FD'}}/>}
+                    show === qstns.id ? <i class="fas fa-minus" style={{color: '#1FB1FD'}}/> :
+                    <i class="fas fa-plus" style={{color: '#1FB1FD'}}/>}
             </div>
-
+                    <span style={{transition: '500ms linear'}}>
                 {
-                    show && (
-                    <Typography variant ='body1' style={{padding: '10px 0'}}>
-                        Decentralized finance is an experimental form of finance that does not rely on central financial intermediaries such as brokerages, exchanges, or banks to offer traditional financial instruments, and instead utilizes smart contracts on blockchains, the most common being Ethereum.
-                    </Typography>)
+                    show === qstns.id ? (
+                    <Typography variant ='body2' style={{padding: '10px 0'}}>
+                        {qstns.answer}
+                    </Typography>
+                    ) : null
                 }
+                </span>
         </div>
     )
 }

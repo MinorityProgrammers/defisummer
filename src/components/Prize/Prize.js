@@ -6,15 +6,26 @@ import StartImg from '../../assets/images/Star.svg'
 
 const useStyles = makeStyles (() => ({
     container:{
-        width: '250px',
+        width: '260px',
         '&:hover': {
-            cursor: 'pointer'
-          }
+            cursor: 'pointer',
+            transition: 'all 0.2s ease-out',
+            boxShadow: '0px 4px 8px rgba(38, 38, 38, 0.2)',
+            top: '-4px',
+            border: '0.5px solid #cccccc',
+            backgroundColor: 'white',
+            padding: '10px'
+          },
+          marginTop: '1vh',
+          marginBottom: '1vh',
+          marginRight: '2%',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center'
     },
     image:{
-        objectFit: 'contain',
-        width: '20px',
-        height: '20px'
+        width: '40px',
+        height: '40px',
     }
 }))
 

@@ -21,7 +21,7 @@ export default function Footer (){
             <div style={{marginBottom: -10}}>
                 {socials}
             </div>
-            <Typography variant='body1' style={{textAlign: 'center'}}>
+            <Typography variant='body2' style={{textAlign: 'center'}}>
                 <span style={{fontWeight: 700}}> © Copyright 2021 by</span> Minority Programmers Association
             </Typography>
         </div>
