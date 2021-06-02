@@ -1,18 +1,18 @@
 import React,{useState} from 'react'
 import {makeStyles} from '@material-ui/core/styles'
-import { Typography } from '@material-ui/core'
+import { Typography, Grid } from '@material-ui/core'
 
 import Event from './Event'
 import {data} from '../../Data/DummyData'
 
 const useStyles = makeStyles(() => ({
     container:{
-        margin: '10vh 15vh'
+        margin: '10vh 15vh',
+        overflowX: 'auto'
     },
     tabsContainer:{
         display: 'flex',
         justifyContent: 'space-between',
-        flexWrap: 'wrap'
     },
     tabs:{
         display: 'flex',
@@ -24,7 +24,7 @@ const useStyles = makeStyles(() => ({
         textTransform: 'uppercase',
         '&:hover': {
             cursor: 'pointer',
-        }
+        },
     },
 }))
 
@@ -34,11 +34,16 @@ export default function EventsList () {
     const allEvents = data.events.map(event => event.name);
     const tasks = data.events.map(event => event).filter(e => e.name === selected)
 
-    const events = tasks[0].events.map(task => <Event key={task.id} event={task}/>)
+    const events = tasks[0].events.map(task => (
+        <Grid item md={12} sm={12} xs={12}>
+            <Event key={task.id} event={task}/>
+        </Grid>
+    ))
     
     return(
         <div className={classes.container}>
-            <div className={classes.tabsContainer}>
+            <Grid container >
+            <Grid tem md={12} sm={12} xs={12} className={classes.tabsContainer}>
                 <div className={classes.tabs}>
                     {
                         data.events.map(event => (
@@ -55,8 +60,9 @@ export default function EventsList () {
             <Typography variant='h5'>
                 {'<SCHEDULE/>'}
             </Typography>
-            </div>
-            {events}
+            </Grid>
+                {events}
+        </Grid>
         </div>
     )
 }

@@ -5,7 +5,7 @@ import { Typography } from '@material-ui/core'
 const useStyles = makeStyles (() => ({
     container:{
         display: 'flex',
-        width: '400px',
+        width: '300px',
         margin: '20px ',
         '&:hover': {
             cursor: 'pointer',

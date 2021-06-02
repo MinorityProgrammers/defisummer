@@ -9,12 +9,12 @@ const useStyles = makeStyles(() => ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        flexWrap: 'wrap',
+        // flexWrap: 'wrap',
         margin: '5vh 0',
     },
     title:{
         textAlign: 'center',
-        color: '#1FB1FD'
+        color: '#1FB1FD',
     },
     calendar:{
         backgroundSize: '140px', 

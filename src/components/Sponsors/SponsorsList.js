@@ -1,6 +1,6 @@
 import React from 'react'
 import {makeStyles} from '@material-ui/core/styles'
-import { Typography } from '@material-ui/core';
+import { Typography, Grid } from '@material-ui/core';
 
 import Sponsor from './Sponsor'
 import {data} from '../../Data/DummyData'
@@ -12,8 +12,7 @@ const useStyles = makeStyles (() => ({
     sponsors:{
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'space-around',
-        flexWrap: 'wrap',
+        justifyContent: 'center',
         width: '70%',
         margin: '5vh auto'
     }
@@ -22,15 +21,19 @@ const useStyles = makeStyles (() => ({
 export default function SponsorsList () {
     let classes = useStyles();
 
-    const sponsors = data.sponsors.map(sponsor => <Sponsor key={sponsor.id} data={sponsor}/>)
+    const sponsors = data.sponsors.map(sponsor => (
+        <Grid item xs={12} md={4} sm={6} lg={4}>
+            <Sponsor key={sponsor.id} data={sponsor}/>
+        </Grid>
+    ))
     return(
         <div className={classes.container}> 
             <Typography variant='h5' style={{textAlign: 'right'}}>
                 {'<BROUGHT_TO_YOU_BY/>'}
             </Typography>
-            <div className={classes.sponsors}>
+            <Grid container className={classes.sponsors}>
                 {sponsors}
-            </div>
+            </Grid>
         </div>
     )
 }

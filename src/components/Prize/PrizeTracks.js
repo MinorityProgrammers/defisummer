@@ -1,6 +1,6 @@
 import React from 'react'
 import {makeStyles} from '@material-ui/core/styles'
-import {Typography} from '@material-ui/core'
+import {Typography,Grid} from '@material-ui/core'
 
 import Prize from './Prize'
 import {data} from '../../Data/DummyData'
@@ -13,17 +13,19 @@ const useStyles = makeStyles (() => ({
         display: 'flex',
         justifyContent: 'center',
         flexWrap: 'wrap',
-        flexGrow: 1,
         margin: '10vh 0',
     }
 }))
 
 export default function PrizeTracks () {
     let classes = useStyles();
-    const prizes = data.prize.map(p => <Prize key={p.id} prizes={p}/>)
+    const prizes = data.prize.map(p => (
+    <Grid item lg={3} md={4} sm={6} xs={8}>
+        <Prize key={p.id} prizes={p}/>
+    </Grid>
+    ))
 
     return(
-        <div className=''>
         <div className={classes.container}>
             <div>
             <Typography variant='h5' style={{fontWeight: 700}}>
@@ -33,10 +35,9 @@ export default function PrizeTracks () {
                 <span style={{fontWeight: 700}}>$6,500</span> in Prizes
             </Typography>
             </div>
-            <div className={classes.prize}>
-                {prizes}
-            </div>
-        </div>
+            <Grid container className={classes.prize}>
+                    {prizes}
+            </Grid>
         </div>
     )
 }

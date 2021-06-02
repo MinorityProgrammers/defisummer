@@ -27,7 +27,7 @@ export default function Navigation ({style}) {
     let classes = useStyles();
     return(
         <div style={style} className={classes.container}>
-            <img src={MPA} alt='MPA' className={classes.logo}/>
+            <a href='https://minorityprogrammers.com/' target='_blank'><img src={MPA} alt='MPA' className={classes.logo}/></a>
             <div className={classes.logoLeft}>
                 <img src={Devpost} alt='Devpost' className={classes.logo} style={{width: '80%', height: '55px'}}/>
                 <img src={Discord} alt='Discord' className={classes.logo}/>
