@@ -89,7 +89,7 @@ export const data = {
         {id: '7', image: Blockchain, link: 'https://www.blockchainacceleration.org/'},
     ],
     socials:[
-        {id: '1', image: Second},
+        {id: '1', image: Second, link: "https://www.reddit.com/r/defisummer"},
         {id: '2', image: Twitter,link: 'https://twitter.com/DefiSummer'},
     ],
     tableData: [
