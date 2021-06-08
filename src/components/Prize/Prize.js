@@ -21,11 +21,15 @@ const useStyles = makeStyles (() => ({
           marginRight: '2%',
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center'
+        //   alignItems: 'center'
     },
     image:{
         width: '40px',
         height: '40px',
+    },
+    title:{
+        display: 'flex',
+        alignItems: 'center',
     }
 }))
 
@@ -33,15 +37,16 @@ export default function Prize ({prizes}) {
     let classes = useStyles();
     return(
         <div className={classes.container}>
-            <img src={StartImg} alt='Prize' style={{width: 150, height: 150, margin: '20px '}}/>
-            <div>
-            <Typography variant='body1' style={{fontWeight: 700, marginBottom: 5}}>
-                {prizes.title}
-            </Typography>
+            <div className={classes.title}>
+                <img src={StartImg} alt='Prize' style={{width: 20, height: 20, marginRight: 5}}/>
+                <Typography variant='body1' style={{fontWeight: 700, fontSize: 12}}>
+                    {prizes.title}
+                </Typography>
+            </div>
             <Typography variant='body2' style={{fontSize: 12}}>
                 {prizes.description}
             </Typography>
-            </div>
+            
         </div>
     )
 }

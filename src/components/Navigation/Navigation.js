@@ -27,10 +27,10 @@ export default function Navigation ({style}) {
     let classes = useStyles();
     return(
         <div style={style} className={classes.container}>
-            <a href='https://minorityprogrammers.com/' target='_blank'><img src={MPA} alt='MPA' className={classes.logo}/></a>
+            <a href='https://minorityprogrammers.com/' target='_blank' rel="noreferrer"><img src={MPA} alt='MPA' className={classes.logo}/></a>
             <div className={classes.logoLeft}>
-                <img src={Devpost} alt='Devpost' className={classes.logo} style={{width: '80%', height: '55px'}}/>
-                <img src={Discord} alt='Discord' className={classes.logo}/>
+                <a href='/' rel='noreferrer'><img src={Devpost} alt='Devpost' className={classes.logo} style={{width: '80%', height: '55px'}}/></a>
+                <a href='http://discord.gg/TAmSpBvmR2' target='_blank' rel='noreferrer'><img src={Discord} alt='Discord' className={classes.logo}/></a>
             </div>
         </div>
     )

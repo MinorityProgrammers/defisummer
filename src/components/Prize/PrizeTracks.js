@@ -32,7 +32,7 @@ export default function PrizeTracks () {
                 {'<PRIZE_TRACKS/>'}
             </Typography>
             <Typography variant='body2' style={{margin: '10px 0'}}>
-                <span style={{fontWeight: 700}}>$6,500</span> in Prizes
+                <span style={{fontWeight: 700}}>$10,000</span> in Prizes
             </Typography>
             </div>
             <Grid container className={classes.prize}>

@@ -31,7 +31,6 @@ const useStyles = makeStyles(() => ({
 export default function EventsList () {
     const [selected, setSelected] = useState('Learn');
     let classes = useStyles()
-    const allEvents = data.events.map(event => event.name);
     const tasks = data.events.map(event => event).filter(e => e.name === selected)
 
     const events = tasks[0].events.map(task => (

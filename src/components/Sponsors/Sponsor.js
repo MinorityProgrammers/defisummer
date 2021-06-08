@@ -22,7 +22,7 @@ export default function Sponsor ({data}) {
     let classes = useStyles();
     return (
         <div className={classes.sponsor}>
-            <a href={data.link} target='_blank'>
+            <a href={data.link} target='_blank' rel="noreferrer">
                 <img src={data.image} alt='sponsor' className={classes.sponsorImage}/>
             </a>
         </div>
