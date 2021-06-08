@@ -10,6 +10,7 @@ import Stellar from '../assets/images/Stellar_Development_Foundation.svg'
 import Mpa from '../assets/images/MPA-Exec.svg'
 import Mtt from '../assets/images/MTTLogo 3.svg'
 import Pluto from '../assets/images/pluto.svg'
+import Enzyme from '../assets/images/enzyme.svg'
 import Saint from '../assets/images/saintgits-white.svg'
 import Echelon from '../assets/images/image 63.svg'
 import Blockchain from '../assets/images/image 67.svg'
@@ -84,9 +85,10 @@ export const data = {
         {id: '2', image: Mpa, link: 'https://minorityprogrammers.com/'},
         {id: '3', image: Mtt, link: 'https://minorityprogrammers.com/'},
         {id: '4', image: Pluto, link: 'https://www.plutopepe.com/'},
-        {id: '5', image: Saint, link: 'https://saintgits.org/'},
-        {id: '6', image: Echelon, link: 'https://www.echelondigital.com/'},
-        {id: '7', image: Blockchain, link: 'https://www.blockchainacceleration.org/'},
+        {id: '5', image: Enzyme, link: 'https://enzyme.finance//'},
+        {id: '6', image: Saint, link: 'https://saintgits.org/'},
+        {id: '7', image: Echelon, link: 'https://www.echelondigital.com/'},
+        {id: '8', image: Blockchain, link: 'https://www.blockchainacceleration.org/'},
     ],
     socials:[
         {id: '1', image: Second, link: "https://www.reddit.com/r/defisummer"},
