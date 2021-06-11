@@ -48,7 +48,8 @@ export default function Event ({event}) {
            </div>
            <div className={classes.title}>
                 <Typography variant='body1'>
-                    Name of Event (Click to Link)
+                    Title
+                    {/* Name of Event (Click to Link) */}
                 </Typography>
                 <Typography variant='body2'>
                     {event.event}
