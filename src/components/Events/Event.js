@@ -15,6 +15,7 @@ const useStyles = makeStyles(() => ({
     title:{
         textAlign: 'center',
         color: '#1FB1FD',
+        width: '300px'
     },
     calendar:{
         backgroundSize: '140px', 
