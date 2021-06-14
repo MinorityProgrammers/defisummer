@@ -12,7 +12,6 @@ const useStyles = makeStyles (() => ({
     prize:{
         display: 'flex',
         justifyContent: 'center',
-        flexWrap: 'wrap',
         margin: '10vh 0',
     }
 }))
@@ -20,9 +19,9 @@ const useStyles = makeStyles (() => ({
 export default function PrizeTracks () {
     let classes = useStyles();
     const prizes = data.prize.map(p => (
-    <Grid item lg={3} md={4} sm={6} xs={8}>
+   
         <Prize key={p.id} prizes={p}/>
-    </Grid>
+    
     ))
 
     return(

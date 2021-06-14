@@ -21,19 +21,43 @@ import Second from '../assets/icons/Rectangle 271.svg'
 
 //Events
 const learn = [
-    {id: '1', month: 'June', date: '1st', time: '9:00 AM EST', event: 'Kick off Ceremony'},
-    {id: '2', month: 'June', date: '1st', time: '9:00 AM EST', event: 'Challenges Announced'},
-    {id: '3', month: 'June', date: '1st', time: '9:00 AM EST', event: 'TBA'},
-    {id: '4', month: 'June', date: '1st', time: '9:00 AM EST', event: 'TBA'},
-    {id: '5', month: 'June', date: '2st', time: '9:00 AM EST', event: 'TBA'},
+    {id: '1', month: 'June', date: '1st', time: '-', event: 'Prize Tracks Announced'},
+    {id: '2', month: 'June', date: '4th', time: '-', event: 'Kick Off Ceremony'},
+    {id: '3', month: 'June', date: '8th', time: '5:00 PM EST', event: 'Introduction to Blockchain/Defi'},
+    {id: '4', month: 'June', date: '9th', time: '3:00 PM EST', event: 'Introduction to NFTs'},
+    {id: '5', month: 'June', date: '10th', time: '2:00 PM EST', event: 'Introduction to DAOs,Governance, Business Use Cases'},
+    {id: '6', month: 'June', date: '11th', time: '12:00 PM EST', event: 'Introduction to Stellar'},
+    {id: '7', month: 'June', date: '14th', time: '3:00 PM EST', event: 'Deploying NFTs on Testnet'},
+    {id: '8', month: 'June', date: '14th', time: '3:00 PM EST', event: 'Deploying NFTs on Testnet'},
+    {id: '9', month: 'June', date: '15th', time: '12:00 PM EST', event: 'How to get started developing on Stellar'},
+    {id: '10', month: 'June', date: '16th', time: '6:00 PM EST', event: 'What is On-Chain Asset Management, Intro to Enzyme'},
+    {id: '11', month: 'June', date: '17th', time: '6:00 PM EST', event: 'Look at Governance Platforms & Designing A DAO'},
+    {id: '12', month: 'June', date: '18th', time: '11:00 AM EST', event: 'Blockchain Consultancy: Case Study 1'},
+    {id: '13', month: 'June', date: '21st', time: '6:00 PM EST', event: 'Building React dApps'},
+    {id: '14', month: 'June', date: '22nd', time: '3:00 PM EST', event: 'How to Integrate Web3 Wallets'},
+    {id: '15', month: 'June', date: '23rd', time: '6:00 PM EST', event: 'Blockchain Consultancy Case Study 2'},
+    {id: '16', month: 'June', date: '24th', time: '-', event: 'Designing Gaming Contracts'},
+    {id: '17', month: 'June', date: '28th', time: '2:00 PM EST', event: 'Tokenomics Workshop'},
+    {id: '18', month: 'June', date: '29th', time: '5:00 PM EST', event: 'Learning Incentivization Explained - Combining eLearning & Blockchain'},
+    {id: '19', month: 'June', date: '30th', time: 'TBD EST', event: 'Using Enzyme SDK'},
 ]
 
 const hack = [
-    {id:'1', month: 'July', date:'1st' ,time:'TBA', event:'Team Formation, Ideation, Market Research'},
-    {id:'2', month: 'July', date:'2nd' ,time:'TBA', event:'Topic Specific Workshops'},
-    {id:'3', month: 'July', date:'3rd' ,time:'TBA', event:'TBA'},
-    {id:'4', month: 'July', date:'4th' ,time:'TBA', event:'Topic Specific Workshops'},
-    {id:'5', month: 'July', date:'5th' ,time:'TBA', event:'Topic Specific Workshops'},
+    {id:'1', month: 'July', date:'1st' ,time:'-', event:'Start of Hackathon Build'},
+    {id:'2', month: 'July', date:'6th' ,time:'3:00 PM EST', event:'Team Formation, Ideation, Market Research'},
+    {id:'3', month: 'July', date:'8th' ,time:'3:00 PM EST', event:'Formal Verification for DeFi projects'},
+    {id:'4', month: 'July', date:'8th' ,time:'6:00 PM EST', event:'Test Driven Development on Solidity & Truffle'},
+    {id:'5', month: 'July', date:'12th' ,time:'-', event:'Office Hours'},
+    {id:'6', month: 'July', date:'14th' ,time:'-', event:'Office Hours'},
+    {id:'7', month: 'July', date:'19th' ,time:'-', event:'Office Hours'},
+    {id:'8', month: 'July', date:'21st' ,time:'-', event:'Office Hours'},
+    {id:'9', month: 'July', date:'26th' ,time:'-', event:'Office Hours'},
+    {id:'10', month: 'July', date:'28th' ,time:'-', event:'Office Hours'},
+    {id:'11', month: 'Auguest', date:'2nd' ,time:'-', event:'Office Hours'},
+    {id:'12', month: 'August', date:'4th' ,time:'-', event:'Office Hours'},
+    {id:'13', month: 'August', date:'9th' ,time:'-', event:'Office Hours'},
+    {id:'14', month: 'August', date:'11th' ,time:'-', event:'Office Hours'},
+    {id:'15', month: 'August', date:'15th' ,time:'-', event:'Submission Deadline'},
 ]
 
 const build = [
@@ -46,14 +70,9 @@ const build = [
 
 export const data = {
     prize: [
-        {id: '1', title: 'Learning Incentivization', description: 'Learning Incentivization: Develop an e-learning application that rewards individuals crypto for learning STEM concepts. The winners of this will be given a chance at Blockchain Engineering internships with MPA.'},
-        {id: '2', title: 'Blockchain Consulting Award (2)', description: 'Blockchaun Consulting: Case Study - Design a system that turns Minority Programmers Association into a DAO with its own utility tocken. Winner with be given an Internship as Blockchain Research Intern at Minority Programmers or Echelon Digitak Consulting.'},
-        {id: '3', title: '“Choose Your Own Adventure Governance” - PlutoPepe ($1000 in $SPLUTO)', description: 'Build a dAPP with a stunning UI that allows individuals to vote on the outcome of a storyline for having a certain amount of tockens in their wallet.'},
-        {id: '4', title: "Gaming Utility Token - PlutoPepe ($1000 in $PLUTO)", description: 'This goes to the team that can implement a smart contract game; ex; ConFlip, Predictions, Roulette, Dice, that pays out rewards in $PEPE token.'},
-        {id: '5', title: 'DefiSummer NFT Art Grand Prize', description: 'You are to design a one of a kind DeFiSummer NFT. Make it iconic. Think the DeFi Woodstock. Your non-fungible token will be forever minted in DeFI Hall of Fame.'},
-        {id: '6', title: 'Trading Automation Prize - Enzyme', description: 'Trading Automation: Develop an internface and bot that allows gedge funds on Enzyme finance to easily build trading strategies, fund allocation, etc. generates and a bot that uses the enzyme protocal to trade accordingly.'},
-        {id: '7', title: 'NFT Meme Marketplace Prize - PlutoPepe ($1000 in $PLUTO)', description: 'NFT Meme Marketplace - Develop an NFT marketplace on BSC/Matic that allows anyone to easily build a meme, use as nft, share on social media, bid, build and view and even respond with NFT comments.'},
-        {id: '8', title: 'Stellar Prize ', description: 'Build a dAPP that facilitates use case of global (cross-border) payment system on Stellar testnet/mainnet; Ex; developing a system for paying out hourly wages for certain job positions.'},
+        {id: '1', title: '1st Place ($1500 in $XLM)',subTitle: '1 Winner - $1,500 cash value', description: 'The way the global financial establishment is structured today, people are born into an economy just like they’re born into a political system. Stellar is a way out: it lets people participate in a worldwide, stable financial network regardless of where they live. In this challenge, your job is to build a project on the Stellar test network that solves a specific real-world problem. Examples include Uhuru Wallet, a WhatsApp-based wallet that allows for sending intra-African payments, Vibrant, a dollar-savings app for Argentines, and DSTOQ, which makes investing accessible and affordable for people in emerging markets.'},
+        {id: '2', title: '2nd Place ($1000 in $XLM)',subTitle: '1 Winner - $1,000 cash value', description: 'In this challenge, your job is to build a project on the Stellar test network that solves a specific real-world problem. Examples include Uhuru Wallet, a WhatsApp-based wallet that allows for sending intra-African payments, Vibrant, a dollar-savings app for Argentines, and DSTOQ, which makes investing accessible and affordable for people in emerging markets.'},
+        {id: '3', title: '3rd Place ($500 in $XLM)',subTitle: '1 Winner - $500 cash value', description: 'In this challenge, your job is to build a project on the Stellar test network that solves a specific real-world problem. Examples include Uhuru Wallet, a WhatsApp-based wallet that allows for sending intra-African payments, Vibrant, a dollar-savings app for Argentines, and DSTOQ, which makes investing accessible and affordable for people in emerging markets.'},
     ],
     help: [
         {id: '1', image:Help1Img , title: 'Host a Workshop'},

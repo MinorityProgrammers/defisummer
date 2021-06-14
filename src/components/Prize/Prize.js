@@ -6,7 +6,7 @@ import StartImg from '../../assets/images/Star.svg'
 
 const useStyles = makeStyles (() => ({
     container:{
-        width: '260px',
+        width: '350px',
         '&:hover': {
             cursor: 'pointer',
             transition: 'all 0.2s ease-out',
@@ -16,9 +16,8 @@ const useStyles = makeStyles (() => ({
             backgroundColor: 'white',
             padding: '10px'
           },
-          marginTop: '1vh',
-          marginBottom: '1vh',
-          marginRight: '2%',
+          margin: '1vh 0',
+          marginRight: '2vh',
           display: 'flex',
           flexDirection: 'column',
         //   alignItems: 'center'
@@ -39,10 +38,13 @@ export default function Prize ({prizes}) {
         <div className={classes.container}>
             <div className={classes.title}>
                 <img src={StartImg} alt='Prize' style={{width: 20, height: 20, marginRight: 5}}/>
-                <Typography variant='body1' style={{fontWeight: 700, fontSize: 12}}>
-                    {prizes.title}
+                <Typography variant='body1' style={{fontWeight: 700, fontSize: 16}}>
+                    {`Stellar Challenge - ${prizes.title}`}
                 </Typography>
             </div>
+            <Typography variant='body2' style={{fontSize: 12, margin: '10px 0'}}>
+                {prizes.subTitle}
+            </Typography>
             <Typography variant='body2' style={{fontSize: 12}}>
                 {prizes.description}
             </Typography>
