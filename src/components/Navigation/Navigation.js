@@ -29,7 +29,7 @@ export default function Navigation ({style}) {
         <div style={style} className={classes.container}>
             <a href='https://minorityprogrammers.com/' target='_blank' rel="noreferrer"><img src={MPA} alt='MPA' className={classes.logo}/></a>
             <div className={classes.logoLeft}>
-                <a href='/' rel='noreferrer'><img src={Devpost} alt='Devpost' className={classes.logo} style={{width: '80%', height: '55px'}}/></a>
+                <a href='https://defi.devpost.com/' rel='noreferrer' target="_blank"><img src={Devpost} alt='Devpost' className={classes.logo} style={{width: '80%', height: '55px'}}/></a>
                 <a href='http://discord.gg/TAmSpBvmR2' target='_blank' rel='noreferrer'><img src={Discord} alt='Discord' className={classes.logo}/></a>
             </div>
         </div>

@@ -19,9 +19,9 @@ const useStyles = makeStyles (() => ({
 export default function PrizeTracks () {
     let classes = useStyles();
     const prizes = data.prize.map(p => (
-   
-        <Prize key={p.id} prizes={p}/>
-    
+        <Grid>
+            <Prize key={p.id} prizes={p}/>
+        </Grid>
     ))
 
     return(
