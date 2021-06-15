@@ -6,7 +6,7 @@ import StartImg from '../../assets/images/Star.svg'
 
 const useStyles = makeStyles (() => ({
     container:{
-        width: '350px',
+        width: '300px',
         '&:hover': {
             cursor: 'pointer',
             transition: 'all 0.2s ease-out',
@@ -39,7 +39,7 @@ export default function Prize ({prizes}) {
             <div className={classes.title}>
                 <img src={StartImg} alt='Prize' style={{width: 20, height: 20, marginRight: 5}}/>
                 <Typography variant='body1' style={{fontWeight: 700, fontSize: 16}}>
-                    {`Stellar Challenge - ${prizes.title}`}
+                    {prizes.title}
                 </Typography>
             </div>
             <Typography variant='body2' style={{fontSize: 12, margin: '10px 0'}}>
