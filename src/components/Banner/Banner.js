@@ -61,6 +61,10 @@ const useStyles = makeStyles((theme) => ({
             transition: '500ms linear'
           },
         color: '#fff'
+    },
+    link:{
+        textDecoration: 'none',
+        color: '#fff'
     }
 }))
 export default function Banner () {
@@ -74,12 +78,13 @@ export default function Banner () {
             <div className={classes.buttons}>
             <div className={classes.container}>
                 <Typography component='p' variant='body1'> 
-                    Register on DEVPOST
+                <a href='https://defi.devpost.com/' rel='noreferrer' target="_blank" className={classes.link}>Register on DEVPOST</a>
                 </Typography>
             </div>
             <div className={classes.container2} >
                 <Typography component='p' variant='body1'> 
-                    Join the Discord
+                <a href='http://discord.gg/TAmSpBvmR2' target='_blank' rel='noreferrer' className={classes.link}>
+                    Join the Discord</a>
                 </Typography>
             </div>
             </div>
