@@ -11,7 +11,7 @@ const useStyles = makeStyles (() => ({
     },
     prize:{
         display: 'flex',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         margin: '10vh 0',
     }
 }))
