@@ -37,13 +37,13 @@ export default function Event ({event}) {
         <div className={classes.container}>
             <div className={classes.calendar}>
                 <Typography variant='body1'>{event.month}</Typography>
-                <Typography variant='body2'>{event.date}</Typography>
+                <Typography variant='body1'>{event.date}</Typography>
             </div>
            <div className={classes.title}>
                 <Typography variant='body1'>
                     Time
                 </Typography>
-                <Typography variant='body2'>
+                <Typography variant='body1'>
                     {event.time}
                 </Typography>
            </div>
@@ -52,7 +52,7 @@ export default function Event ({event}) {
                     Title
                     {/* Name of Event (Click to Link) */}
                 </Typography>
-                <Typography variant='body2'>
+                <Typography variant='body1'>
                     {event.event}
                 </Typography>
            </div>
