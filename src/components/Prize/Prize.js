@@ -16,8 +16,7 @@ const useStyles = makeStyles (() => ({
             backgroundColor: 'white',
             padding: '10px'
           },
-          margin: '1vh 0',
-          marginRight: '2vh',
+          margin: '1vh auto',
           display: 'flex',
           flexDirection: 'column',
         //   alignItems: 'center'

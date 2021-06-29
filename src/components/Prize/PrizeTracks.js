@@ -11,20 +11,20 @@ const useStyles = makeStyles (() => ({
     },
     prize:{
         display: 'flex',
-        justifyContent: 'space-around',
-        margin: '10vh 0',
+        // justifyContent: 'space-around',
+        marginTop: '10vh',
     }
 }))
 
 export default function PrizeTracks () {
     let classes = useStyles();
     const prizes = data.prize.map(p => (
-        <Grid lg={4} md={4} sm={6} xs={7}>
+        <Grid lg={4} md={4} sm={6} xs={12}>
             <Prize key={p.id} prizes={p}/>
         </Grid>
     ))
     const sPrizes = data.stellar.map(p => (
-        <Grid lg={4} md={4} sm={6} xs={7}>
+        <Grid lg={4} md={4} sm={6} xs={12}>
             <Prize key={p.id} prizes={p}/>
         </Grid>
     ))
@@ -36,13 +36,14 @@ export default function PrizeTracks () {
                 {'<PRIZE_TRACKS/>'}
             </Typography>
             <Typography variant='body2' style={{margin: '10px 0'}}>
-                <span style={{fontWeight: 700}}>$10,000</span> in Prizes
+                <span style={{fontWeight: 700}}>$14,000</span> in Prizes
             </Typography>
             </div>
             <Grid container className={classes.prize}>
                     {prizes}
             </Grid>
-            <Grid container className={classes.prize}>
+            
+            <Grid container style={{margin: '5vh 0'}}>
                     {sPrizes}
             </Grid>
         </div>
